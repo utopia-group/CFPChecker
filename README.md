@@ -34,12 +34,12 @@ The JAR is located in the generated "target" folder.
 
 ### Command Line
 
-CFPChecker's command line consists of two parts:
-1. CFPChecker-specific arguments. 2. Soot command line arguments.  The
-most important command-line arguments are listed below, the actual
-implementation has more options that were introduces while we were
-debugging the tool. To see how to obtain an actual invocation of
-CFPChecker, refer to the "Regression Tests" section below.
+CFPChecker's command line consists of two parts: CFPChecker-specific
+arguments, and Soot command line arguments.  The most important
+command-line arguments are listed below, the actual implementation has
+more options that were introduces while we were debugging the tool. To
+see how to obtain an actual invocation of CFPChecker, refer to the
+"Regression Tests" section below.
 
 CFPChecker's command line:
 ```
