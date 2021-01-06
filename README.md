@@ -55,4 +55,31 @@ Additional Options:
 
 ### Regression Tests
 
+To run the regression test, you have to follow the following steps:
+
+1. Build them! They are located under the benchmark directory. In
+order to build them just run the following command in their directory:
+```
+$ ./build-benchmarks.sh
+```
+
+2. Run the regression script. Before doing so, you need to set the
+environment variable Z3_BUILD to the build directory of Z3, i.e.,
+`export Z3_BUILD=/path/to/Z3/build/directory`. After this, simply run
+the regression script as follows:
+```
+$ python regression.py -v
+```
+
+The "-v" option is going to print all CFPChecker command lines ran by
+the script. Note, that this script runs test in parallel and each test
+is multi-threaded. To avoid running tests in parallel, just set
+variable `numCores` in the script to 1.
+
 ### Adding More API Protocols
+
+Currently, adding more API protocols can be done only
+programmatically. That is, you have to modify and recompile
+CFPChecker. Specifically, you need to create an API protocol as shown
+in the `Specs.java` class and then add an additional command-line
+argument to CFPChecker (see file `CmdLine.java`).
