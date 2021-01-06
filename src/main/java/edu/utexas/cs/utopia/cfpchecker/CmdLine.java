@@ -35,7 +35,7 @@ public class CmdLine
 
     private Specification spec;
 
-    private int nUnroll = 10;
+    private int nUnroll = 5;
 
     private boolean isHelp = false;
 
